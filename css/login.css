@@ -1,0 +1,248 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url(form-bg.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+:root {
+  --primary-color: #0b46c4;
+  --secondary-color: #fafafa;
+  --lightBlue-color: #009ef8;
+  --dark-color: #000;
+  --light-color: white;
+  --gray-color: #9d9d9d;
+  --green-color: #28d07e;
+}
+
+form {
+  background-color: white;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  width: 50%;
+}
+
+form .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form .welcome #logo {
+  width: 155px;
+}
+
+form .content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 100px 140px;
+}
+
+form .content .input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+form .content input {
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: var(--gray-color) solid 1px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+form .content h2 {
+  font-family: "ABeeZee", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.mail {
+  display: flex;
+
+  gap: 10px;
+}
+
+.mail input {
+  width: 80%;
+}
+
+form .content #login {
+  background-color: var(--green-color);
+  color: var(--dark-color);
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+}
+
+form .content #login:hover {
+  background-color: var(--green-color);
+  box-shadow: 5px 5px 24px #888888;
+}
+
+.bg {
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  gap: 30px;
+  font-family: "ABeeZee", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: 1px bold black;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+.line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #8b8b8b;
+  padding: 0 15px;
+}
+
+.mail .login {
+  background-color: var(--green-color);
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  body {
+    align-items: center;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  form {
+    width: 100%;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .mail {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 428px) {
+  form {
+    width: 100%;
+  }
+
+  form .content {
+    margin: 30px 20px;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  form {
+    width: 100%;
+    padding: 0px 170px;
+  }
+
+  form .content {
+    margin: 30px 20px;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1200px) {
+  .mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .mail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail input {
+    width: 100%;
+  }
+}
